@@ -11,4 +11,14 @@ public static class Extensions
     {
         return x0 + (x1 - x0) * (t - t0) / (t1 - t0); 
     }
+
+    public static float NormalizeAngle(this float angle)
+    {
+        var ang = angle;
+        while (ang > 180.0f)
+            ang -= 360.0f;
+        while (ang <= -180.0f)
+            ang += 360.0f;
+        return ang;
+    }
 }

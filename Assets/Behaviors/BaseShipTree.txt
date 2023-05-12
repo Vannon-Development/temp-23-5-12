@@ -1,0 +1,16 @@
+Concurrent true 1
+	Sequence
+		TestPrimaryAttackTrigger
+		TestPrimaryAttackTimer
+		PrimaryAttack
+	Sequence
+		TestTurnInput
+		SetupTurn
+		TestTurnDirection
+		Turn
+	Sequence
+		Inverter
+			Sequence
+				TestAccelerationInput
+				Accelerate
+		Decelerate		
